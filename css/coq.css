@@ -1,0 +1,134 @@
+pre {
+  font-family: Fira Code, Fira Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: #000;
+}
+pre {
+  font-size: 15px;
+  white-space: nowrap;
+  border-radius: 2px;
+  padding: 14px 7px;
+}
+/*
+pre {
+  display: block;
+  background: white;
+  border-left: 3px solid rgba(0, 0, 0, 0.05);
+  padding: 0 0 0 24px;
+}*/
+
+
+pre {
+  text-shadow: 0 1px white;
+  /*font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;*/
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media print {
+  pre {
+  text-shadow: none;
+  }
+}
+
+/* Code blocks */
+pre {
+  overflow: auto;
+}
+
+:not(pre) > .code,
+pre {
+}
+
+/* Inline code */
+:not(pre) > .code {
+  white-space: normal;
+}
+
+
+.id {
+    display: inline;
+}
+
+a.idref {
+    background: none;
+    color: rgb(0%,40%,0%);
+}
+
+a.idref:hover {
+    text-decoration: underline;
+}
+
+.id[title="constructor"] {
+    color: rgb(60%,0%,0%);
+}
+
+
+.id[title="class"],
+.id[title="record"],
+.id[title="inductive"] {
+    color: rgb(0%,0%,80%);
+}
+
+.id[title="keyword"] {
+ color : #cf1d1d;
+}
+
+.id[type="constructor"] { 
+    color: rgb(60%,0%,0%);
+}
+
+.inlinecode .id {
+    color: rgb(0%,0%,0%);
+}
+
+.navigation.navigation-prev {
+	left: 0;
+}
+.navigation.navigation-next {
+	right: 0;
+}
+
+.navigation {
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	margin: 0;
+	max-width: 10rem;
+	min-width: 90px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	font-size: 40px;
+	color: #ccc;
+	text-align: center;
+	-webkit-transition: all 350ms ease;
+	-moz-transition: all 350ms ease;
+	-o-transition: all 350ms ease;
+	transition: all 350ms ease;
+	box-sizing: border-box;
+    background: none !important;
+}
+
+.navigation:link, .navigation:visited {
+	color: #ccc;
+}
+
+@media (max-width: 760px) { 
+    .navigation {
+        position: inherit;
+     }
+}
