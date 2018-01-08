@@ -214,14 +214,14 @@ code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 h1 > code, h2 > code, h3 > code { font-size: 0.80em; }
 
 .marginnote > code, .sidenote > code { font-size: 1rem; }
-
+/*
 pre.code { font-size: 0.9rem;
            width: 52.5%;
            margin-left: 2.5%;
            overflow-x: auto; }
 
 pre.code.fullwidth { width: 90%; }
-
+*/
 .fullwidth { max-width: 90%;
              clear:both; }
 

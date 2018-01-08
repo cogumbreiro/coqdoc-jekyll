@@ -1,6 +1,10 @@
+.inlinecode,
 pre {
   font-family: Fira Code, Fira Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   color: #000;
+}
+.inlinecode {
+    font-size: 85%;
 }
 pre {
   font-size: 15px;
@@ -16,6 +20,9 @@ pre {
   padding: 0 0 0 24px;
 }*/
 
+code {
+  white-space: pre;
+}
 
 pre {
   text-shadow: 0 1px white;
@@ -35,11 +42,14 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  width: 45rem;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 @media print {
   pre {
-  text-shadow: none;
+    text-shadow: none;
   }
 }
 
@@ -130,5 +140,8 @@ a.idref:hover {
 @media (max-width: 760px) { 
     .navigation {
         position: inherit;
+     }
+     pre {
+        width: 100%;
      }
 }
